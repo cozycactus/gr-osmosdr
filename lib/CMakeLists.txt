@@ -268,7 +268,7 @@ endif(ENABLE_XTRX)
 ########################################################################
 # Setup SDDC component
 ########################################################################
-GR_REGISTER_COMPONENT("SDDC support" ENABLE_SDDC LIBSDDC_FOUND)
+GR_REGISTER_COMPONENT("SDDC Receivers" ENABLE_SDDC LIBSDDC_FOUND)
 if(ENABLE_SDDC)
     add_subdirectory(sddc)
 endif(ENABLE_SDDC)
