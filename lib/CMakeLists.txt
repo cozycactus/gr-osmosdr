@@ -266,6 +266,14 @@ if(ENABLE_XTRX)
 endif(ENABLE_XTRX)
 
 ########################################################################
+# Setup SDDC component
+########################################################################
+GR_REGISTER_COMPONENT("SDDC support" ENABLE_SDDC LIBSDDC_FOUND)
+if(ENABLE_SDDC)
+    add_subdirectory(sddc)
+endif(ENABLE_SDDC)
+
+########################################################################
 # Setup configuration file
 ########################################################################
 add_definitions(-DHAVE_CONFIG_H=1)
