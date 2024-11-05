@@ -177,6 +177,7 @@ find_package(SoapySDR NO_MODULE)
 find_package(LibFreeSRP)
 find_package(LibXTRX)
 find_package(Doxygen)
+find_package(LibSDDC)
 
     # Python
     ##########
